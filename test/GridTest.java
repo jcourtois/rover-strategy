@@ -7,30 +7,31 @@ import static org.junit.Assert.assertThat;
 
 public class GridTest {
 
+    private GridBuilder gridBuilder;
+    private Coordinate location;
     private Grid grid;
     private Rover rover;
 
     @Before
     public void setUp(){
-        grid = new Grid(10,10);
-        rover = new Rover(Direction.North);
+        grid = new Grid(10, 10);
+        gridBuilder = new GridBuilder(grid);
+        location = new Coordinate(4,3);
+        rover = gridBuilder.createNorthFacingRoverAt(location.x, location.y);
     }
 
     @Test
     public void gridShouldBeAbleToTellUsIfItDoesNotHaveOurRover(){
-        assertThat(grid.findRover(rover),is(nullValue()));
+        assertThat(grid.findRover(new Rover(null, new North())),is(nullValue()));
     }
 
     @Test
     public void gridShouldBeAbleToTellUsIfItHasOurRover(){
-        Coordinate location = new Coordinate(3,2);
-        grid.addRover(rover, location);
         assertThat(grid.findRover(rover),is(location));
     }
 
     @Test
     public void gridCanMoveRoverIfTheTargetSpaceIsValid(){
-        grid.addRover(rover, new Coordinate(4,3));
         Coordinate displacement = new Coordinate(1,0);
         grid.moveRover(rover, displacement);
         assertThat(grid.findRover(rover), is(new Coordinate(5,3)));
@@ -38,7 +39,6 @@ public class GridTest {
 
     @Test
     public void gridCanTellUsIfCoordinateIsOpen(){
-        grid.addRover(rover, new Coordinate(4,3));
         assertThat(grid.hasOpenSpace(new Coordinate(4,3)),is(false));
         assertThat(grid.hasOpenSpace(new Coordinate(1,1)),is(true));
     }
@@ -54,13 +54,10 @@ public class GridTest {
 
     @Test
     public void gridShouldNotAllowTwoRoversToOccupySameSpace(){
-        Coordinate firstRoversPosition = new Coordinate(0,0);
-        Coordinate secondRoversPosition = new Coordinate(1,0);
-        Rover secondRover = new Rover(Direction.North);
+        Rover rover1 = gridBuilder.createEastFacingRoverAt(3,4);
+        Rover rover2 = gridBuilder.createEastFacingRoverAt(2,4);
         Coordinate displacement = new Coordinate(1,0);
-        grid.addRover(rover, firstRoversPosition);
-        grid.addRover(secondRover, secondRoversPosition);
-        assertThat(grid.moveRover(rover, displacement), is(false));
-        assertThat(grid.findRover(rover), is(firstRoversPosition));
+        assertThat(grid.moveRover(rover2, displacement), is(false));
+        assertThat(grid.findRover(rover2), is(new Coordinate(2,4)));
     }
 }

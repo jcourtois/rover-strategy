@@ -8,15 +8,28 @@ public class RoverTest {
 
     @Test
     public void shouldTurnLeft(){
-        Rover rover = new Rover(Direction.North);
+        Rover rover = new Rover(null, new North());
         rover.turnLeft();
-        assertThat(rover.getHeading(), is(Direction.West));
+        assertThat(rover.getHeading(), is(West.class));
         rover.turnLeft();
-        assertThat(rover.getHeading(), is(Direction.South));
+        assertThat(rover.getHeading(), is(South.class));
         rover.turnLeft();
-        assertThat(rover.getHeading(), is(Direction.East));
+        assertThat(rover.getHeading(), is(East.class));
         rover.turnLeft();
-        assertThat(rover.getHeading(), is(Direction.North));
+        assertThat(rover.getHeading(), is(North.class));
+    }
+
+    @Test
+    public void shouldTurnRight(){
+        Rover rover = new Rover(null, new North());
+        rover.turnRight();
+        assertThat(rover.getHeading(), is(East.class));
+        rover.turnRight();
+        assertThat(rover.getHeading(), is(South.class));
+        rover.turnRight();
+        assertThat(rover.getHeading(), is(West.class));
+        rover.turnRight();
+        assertThat(rover.getHeading(), is(North.class));
     }
 
 }

@@ -30,4 +30,8 @@ public class Coordinate {
     public Coordinate plus(Coordinate augend) {
         return new Coordinate(this.x + augend.x, this.y + augend.y);
     }
+
+    public String toString(){
+        return "("+x+","+y+")";
+    }
 }
