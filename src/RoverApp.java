@@ -1,21 +1,19 @@
 import java.util.ArrayList;
 
 public class RoverApp {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         RoverCommandParser parser = new RoverCommandParser();
 
-        Grid grid = new Grid(10, 10);
+        Grid grid = new Grid(50, 30);
         GridBuilder gridBuilder = new GridBuilder(grid);
 
-        Rover rover1 = gridBuilder.createEastFacingRoverAt(0,0);
+        Rover rover1 = gridBuilder.createEastFacingRoverAt(0, 0);
 
-        ArrayList<RoverCommand> rover1CommandList = parser.parseMessageIntoListOfCommandsFor(rover1, "MMMMRMMM");
+        ArrayList<RoverCommand> rover1CommandList = parser.parseMessageIntoListOfCommandsFor(rover1, "MMMMRMMMMMMMRMMMMMMMLLMMM");
 
         for(RoverCommand command : rover1CommandList) {
             command.execute();
-            String gst = grid.toString();
-            System.out.println(gst);
         }
-
+        System.out.println(grid.toString());
     }
 }

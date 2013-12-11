@@ -4,9 +4,11 @@ public class Grid {
     private GridObject[][] coordinatePlane;
 
     public Grid(int xBound, int yBound) {
+        EmptySpace emptySpace = new EmptySpace();
         coordinatePlane = new GridObject[xBound][yBound];
+
         for(GridObject[] row : coordinatePlane) {
-            Arrays.fill(row, new EmptySpace());
+            Arrays.fill(row, emptySpace);
         }
     }
 
@@ -20,9 +22,9 @@ public class Grid {
         return findRover(rover) != null;
     }
 
-    public boolean moveRover(Rover rover, Coordinate displacement) {
+    public boolean moveRover(Rover rover, Displacement displacement) {
         Coordinate currentPosition = findRover(rover);
-        Coordinate targetPosition = displacement.plus(currentPosition);
+        Coordinate targetPosition = currentPosition.plus(displacement);
 
         if (this.hasRover(rover) && this.hasOpenSpace(targetPosition)){
             coordinatePlane[currentPosition.x][currentPosition.y] = new EmptySpace();
@@ -49,14 +51,15 @@ public class Grid {
         try {
             return coordinatePlane[coordinate.x][coordinate.y] instanceof EmptySpace;
         } catch (ArrayIndexOutOfBoundsException exception) {
+            System.out.println("Geez, this space is off the map!");
             return false;
         }
     }
 
     public String toString() {
         String output = "";
-        for (int j=0; j<coordinatePlane.length; j++) {
-            for (int i=0; i<coordinatePlane[j].length; i++) {
+        for (int j=0; j<coordinatePlane[0].length; j++) {
+            for (int i=0; i<coordinatePlane.length; i++) {
                 output += coordinatePlane[i][j].toChar().toString();
             }
             output += "\n";

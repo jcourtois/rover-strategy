@@ -2,40 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1b834581-1088-4d45-b089-0ed4276f6747" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/GridBuilder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/RoverCommandParser.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/DirectionEnum.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Rover.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Coordinate.java" afterPath="$PROJECT_DIR$/src/Coordinate.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Direction.java" afterPath="$PROJECT_DIR$/src/Direction.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Grid.java" afterPath="$PROJECT_DIR$/src/Grid.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/GridObject.java" afterPath="$PROJECT_DIR$/src/GridObject.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/GridTest.java" afterPath="$PROJECT_DIR$/test/GridTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/RoverTest.java" afterPath="$PROJECT_DIR$/test/RoverTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/RoverApp.java" afterPath="$PROJECT_DIR$/src/RoverApp.java" />
     </list>
     <ignored path="RoversStrategy.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="1b834581-1088-4d45-b089-0ed4276f6747" time="1386691733961" ignored="false" />
     <file path="/RoverTest.java" changelist="1b834581-1088-4d45-b089-0ed4276f6747" time="1386706714283" ignored="false" />
     <file path="/Rover.java" changelist="1b834581-1088-4d45-b089-0ed4276f6747" time="1386694939126" ignored="false" />
-    <file path="/Direction.java" changelist="1b834581-1088-4d45-b089-0ed4276f6747" time="1386704449825" ignored="false" />
+    <file path="/Direction.java" changelist="1b834581-1088-4d45-b089-0ed4276f6747" time="1386751999108" ignored="false" />
     <file path="/North.java" changelist="1b834581-1088-4d45-b089-0ed4276f6747" time="1386692350400" ignored="false" />
     <file path="/West.java" changelist="1b834581-1088-4d45-b089-0ed4276f6747" time="1386692390882" ignored="false" />
     <file path="/East.java" changelist="1b834581-1088-4d45-b089-0ed4276f6747" time="1386692423723" ignored="false" />
     <file path="/South.java" changelist="1b834581-1088-4d45-b089-0ed4276f6747" time="1386692463142" ignored="false" />
-    <file path="/GridTest.java" changelist="1b834581-1088-4d45-b089-0ed4276f6747" time="1386706696161" ignored="false" />
+    <file path="/GridTest.java" changelist="1b834581-1088-4d45-b089-0ed4276f6747" time="1386752219781" ignored="false" />
     <file path="/RoverBuilder.java" changelist="1b834581-1088-4d45-b089-0ed4276f6747" time="1386697440959" ignored="false" />
     <file path="/GridBuilder.java" changelist="1b834581-1088-4d45-b089-0ed4276f6747" time="1386706251941" ignored="false" />
-    <file path="/Grid.java" changelist="1b834581-1088-4d45-b089-0ed4276f6747" time="1386708859131" ignored="false" />
+    <file path="/Grid.java" changelist="1b834581-1088-4d45-b089-0ed4276f6747" time="1386752721445" ignored="false" />
     <file path="/RoverCommand.java" changelist="1b834581-1088-4d45-b089-0ed4276f6747" time="1386698309871" ignored="false" />
     <file path="/TurnLeftCommand.java" changelist="1b834581-1088-4d45-b089-0ed4276f6747" time="1386696256839" ignored="false" />
     <file path="/TurnRight.java" changelist="1b834581-1088-4d45-b089-0ed4276f6747" time="1386696346611" ignored="false" />
     <file path="/Forward.java" changelist="1b834581-1088-4d45-b089-0ed4276f6747" time="1386696368376" ignored="false" />
     <file path="/fragment.java" changelist="1b834581-1088-4d45-b089-0ed4276f6747" time="1386704708129" ignored="false" />
-    <file path="/RoverApp.java" changelist="1b834581-1088-4d45-b089-0ed4276f6747" time="1386705728423" ignored="false" />
+    <file path="/RoverApp.java" changelist="1b834581-1088-4d45-b089-0ed4276f6747" time="1386709858388" ignored="false" />
     <file path="/RoverCommandParser.java" changelist="1b834581-1088-4d45-b089-0ed4276f6747" time="1386698169049" ignored="false" />
-    <file path="/GridObject.java" changelist="1b834581-1088-4d45-b089-0ed4276f6747" time="1386706233133" ignored="false" />
-    <file path="/Coordinate.java" changelist="1b834581-1088-4d45-b089-0ed4276f6747" time="1386708440827" ignored="false" />
+    <file path="/GridObject.java" changelist="1b834581-1088-4d45-b089-0ed4276f6747" time="1386752577516" ignored="false" />
+    <file path="/Coordinate.java" changelist="1b834581-1088-4d45-b089-0ed4276f6747" time="1386751927692" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,19 +102,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RoverApp.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/RoverApp.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="110" selection-start="433" selection-end="433" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Coordinate.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Coordinate.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="26" selection-start="763" selection-end="763" vertical-scroll-proportion="0.0">
+            <state line="43" column="11" selection-start="888" selection-end="888" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -139,7 +125,7 @@
       <file leaf-file-name="GridBuilder.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GridBuilder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="45" selection-start="266" selection-end="266" vertical-scroll-proportion="0.0">
+            <state line="0" column="125" selection-start="26" selection-end="26" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -148,7 +134,7 @@
       <file leaf-file-name="GridTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/GridTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="45" selection-start="1779" selection-end="1779" vertical-scroll-proportion="0.0">
+            <state line="60" column="61" selection-start="2063" selection-end="2063" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -157,25 +143,34 @@
       <file leaf-file-name="Direction.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Direction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="31" selection-start="575" selection-end="575" vertical-scroll-proportion="0.0">
+            <state line="71" column="31" selection-start="1349" selection-end="1349" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GridObject.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="GridObject.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/GridObject.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="0" selection-start="616" selection-end="616" vertical-scroll-proportion="0.0">
+            <state line="32" column="15" selection-start="631" selection-end="631" vertical-scroll-proportion="0.83916086">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Grid.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Grid.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Grid.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="2" column="13" selection-start="39" selection-end="39" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RoverApp.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/RoverApp.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="8" selection-start="589" selection-end="589" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -215,15 +210,15 @@
         <option value="$PROJECT_DIR$/src/Forward.java" />
         <option value="$PROJECT_DIR$/src/Rover.java" />
         <option value="$PROJECT_DIR$/src/RoverCommandParser.java" />
-        <option value="$PROJECT_DIR$/src/GridObject.java" />
         <option value="$PROJECT_DIR$/src/GridBuilder.java" />
-        <option value="$PROJECT_DIR$/test/GridTest.java" />
         <option value="$PROJECT_DIR$/test/RoverTest.java" />
-        <option value="$PROJECT_DIR$/src/Coordinate.java" />
+        <option value="$PROJECT_DIR$/src/RoverCommand.java" />
         <option value="$PROJECT_DIR$/src/RoverApp.java" />
         <option value="$PROJECT_DIR$/src/Direction.java" />
-        <option value="$PROJECT_DIR$/src/RoverCommand.java" />
+        <option value="$PROJECT_DIR$/test/GridTest.java" />
+        <option value="$PROJECT_DIR$/src/GridObject.java" />
         <option value="$PROJECT_DIR$/src/Grid.java" />
+        <option value="$PROJECT_DIR$/src/Coordinate.java" />
       </list>
     </option>
   </component>
@@ -293,24 +288,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RoversStrategy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RoversStrategy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GridObject.java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
@@ -327,6 +304,7 @@
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="FullScreen" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
@@ -525,7 +503,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="10" y="29" width="1420" height="860" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -540,8 +518,8 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2496361" sideWeight="0.6243243" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37567568" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2496361" sideWeight="0.8418919" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15810812" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -612,16 +590,53 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/GridBuilder.java">
+    <entry file="file://$PROJECT_DIR$/src/Direction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="45" selection-start="266" selection-end="266" vertical-scroll-proportion="0.0">
+        <state line="71" column="31" selection-start="1349" selection-end="1349" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Grid.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="13" selection-start="39" selection-end="39" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/RoverApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="110" selection-start="433" selection-end="433" vertical-scroll-proportion="0.0">
+        <state line="16" column="8" selection-start="589" selection-end="589" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Coordinate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="11" selection-start="888" selection-end="888" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/RoverCommandParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="44" selection-start="708" selection-end="708" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#222#236#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GridBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="125" selection-start="26" selection-end="26" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/GridTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="61" selection-start="2063" selection-end="2063" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -635,43 +650,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/RoverCommandParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="44" selection-start="708" selection-end="708" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#222#236#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Coordinate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="26" selection-start="763" selection-end="763" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GridObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="0" selection-start="616" selection-end="616" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Direction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="31" selection-start="575" selection-end="575" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/GridTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="45" selection-start="1779" selection-end="1779" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/RoverCommand.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="29" column="10" selection-start="591" selection-end="591" vertical-scroll-proportion="0.0">
@@ -679,9 +657,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Grid.java">
+    <entry file="file://$PROJECT_DIR$/src/GridObject.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="32" column="15" selection-start="631" selection-end="631" vertical-scroll-proportion="0.83916086">
           <folding />
         </state>
       </provider>

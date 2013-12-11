@@ -7,6 +7,14 @@ public class Coordinate {
         this.y = y;
     }
 
+    public String toString(){
+        return "("+x+","+y+")";
+    }
+
+    public Coordinate plus(Displacement augend) {
+        return new Coordinate(this.x + augend.x, this.y + augend.y);
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -26,12 +34,10 @@ public class Coordinate {
         result = 31 * result + y;
         return result;
     }
+}
 
-    public Coordinate plus(Coordinate augend) {
-        return new Coordinate(this.x + augend.x, this.y + augend.y);
-    }
-
-    public String toString(){
-        return "("+x+","+y+")";
+class Displacement extends Coordinate {
+    public Displacement(int x, int y) {
+        super(x,y);
     }
 }

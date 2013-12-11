@@ -1,7 +1,7 @@
 public interface Direction {
     public Direction turnLeft();
     public Direction turnRight();
-    public Coordinate forward();
+    public Displacement forward();
     public Character toChar();
 }
 
@@ -14,8 +14,8 @@ class North implements Direction {
         return new East();
     }
 
-    public Coordinate forward() {
-        return new Coordinate(0,-1);
+    public Displacement forward() {
+        return new Displacement(0,-1);
     }
 
     public Character toChar() {
@@ -32,8 +32,8 @@ class East implements Direction {
         return new South();
     }
 
-    public Coordinate forward() {
-        return new Coordinate(1,0);
+    public Displacement forward() {
+        return new Displacement(1,0);
     }
 
     public Character toChar() {
@@ -50,8 +50,8 @@ class South implements Direction {
         return new West();
     }
 
-    public Coordinate forward() {
-        return new Coordinate(0,1);
+    public Displacement forward() {
+        return new Displacement(0,1);
     }
 
     public Character toChar() {
@@ -68,8 +68,8 @@ class West implements Direction {
         return new North();
     }
 
-    public Coordinate forward() {
-        return new Coordinate(-1,0);
+    public Displacement forward() {
+        return new Displacement(-1,0);
     }
 
     public Character toChar() {
